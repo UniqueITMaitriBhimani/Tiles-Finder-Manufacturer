@@ -9,7 +9,7 @@
 <meta name="author" content="pixelstrap">
 <link rel="icon" href="./assets/images/logo/Unique_it.jpg" type="image/x-icon">
 <link rel="shortcut icon" href="./assets/images/logo/Unique_it.jpg" type="image/x-icon">
-<title>Unique IT Solution</title>
+<title>Manufacturer</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -330,7 +330,7 @@
                 <div class="media profile-media"><img class="b-r-10" src="../assets/images/dashboard/profile.png" alt="">
                   <div class="media-body d-xxl-block d-none box-col-none">
                     <div class="d-flex align-items-center gap-2"> <span>Alex Mora </span><i class="middle fa fa-angle-down"> </i></div>
-                    <p class="mb-0 font-roboto">Admin</p>
+                    <p class="mb-0 font-roboto">Manufacturer</p>
                   </div>
                 </div>
                 <ul class="profile-dropdown onhover-show-div">
@@ -353,7 +353,7 @@
           <script class="empty-template" type="text/x-handlebars-template"><div class="EmptyMessage">Your search turned up 0 results. This most likely means the backend is down, yikes!</div></script>
         </div>
       </div>
-      <!-- Page Header Ends                              -->
+      <!-- Page Header Ends-->
       <!-- Page Body Start-->
       <div class="page-body-wrapper">
         <!-- Page Sidebar Start-->
@@ -479,12 +479,10 @@
                             <label class="form-label" for="customState-wizard">Size</label>
                                       <select class="form-select" id="customState-wizard" required="">
                                         <option selected="" disabled="" value="">Select Size</option>
-                                        <option>Africa </option>
-                                        <option>India</option>
-                                        <option>Indonesia </option>
-                                        <option>Netherlands</option>
-                                        <option>U.K </option>
-                                        <option>U.S</option>
+                                        <option>312*312 mm </option>
+                                        <option>200*800 mm</option>
+                                        <option>800*1200 mm </option>
+                                        <option>195*1200 mm</option>
                                       </select>
                                       <div class="invalid-feedback">Please select a valid state.</div>
                           </div>  
@@ -492,12 +490,11 @@
                             <label class="form-label" for="customState-wizard">Category</label>
                                       <select class="form-select" id="customState-wizard" required="">
                                         <option selected="" disabled="" value="">Select Category</option>
-                                        <option>Africa </option>
-                                        <option>India</option>
-                                        <option>Indonesia </option>
-                                        <option>Netherlands</option>
-                                        <option>U.K </option>
-                                        <option>U.S</option>
+                                        <option>Ceramic </option>
+                                        <option>PGVT</option>
+                                        <option>DGVT </option>
+                                        <option>Cool</option>
+                                    
                                       </select>
                                       <div class="invalid-feedback">Please select a valid state.</div>
                           </div>  
@@ -505,15 +502,48 @@
                           <label class="form-label" for="customState-wizard">Finish</label>
                                     <select class="form-select" id="customState-wizard" required="">
                                       <option selected="" disabled="" value="">Select Finish</option>
-                                      <option>Africa </option>
-                                      <option>India</option>
-                                      <option>Indonesia </option>
-                                      <option>Netherlands</option>
-                                      <option>U.K </option>
-                                      <option>U.S</option>
+                                      <option>Matt </option>
+                                      <option>Glossy</option>
+                                      <option>super glossy </option>
+                                      <option>Suger finish</option>
                                     </select>
                                     <div class="invalid-feedback">Please select a valid state.</div>
                         </div>    
+                        <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+                          <label class="form-label" for="customState-wizard">Area</label>
+                                    <select class="form-select" id="customState-wizard" required="">
+                                      <option selected="" disabled="" value="">Select Finish</option>
+                                      <option>BathRoom </option>
+                                      <option>Parking</option>
+                                      <option>Kitchen</option>
+                                      <option>Office</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a valid state.</div>
+                        </div>    
+                        
+                        <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+                          <label class="form-label" for="customState-wizard">Look</label>
+                                    <select class="form-select" id="customState-wizard" required="">
+                                      <option selected="" disabled="" value="">Select Finish</option>
+                                      <option>3d </option>
+                                      <option>Wooden</option>
+                                      <option>Cement </option>
+                                      <option>Plain</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a valid state.</div>
+                        </div>  
+                        <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+                          <label class="form-label" for="customState-wizard">Color</label>
+                                    <select class="form-select" id="customState-wizard" required="">
+                                      <option selected="" disabled="" value="">Select Finish</option>
+                                      <option>Black </option>
+                                      <option>Grey</option>
+                                      <option>White </option>
+                                      <option>Green</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a valid state.</div>
+                        </div>    
+                          
                         <div class="wizard-footer d-flex justify-content-end gap-2 col-lg-12 col-md-12 col-sm-12 mt-3">
                           <button class="btn btn-primary" id="backbtn" type="submit">Search</button>
                           <button class="btn btn-danger" id="nextbtn" type="Clear">Clear</button>
@@ -535,30 +565,46 @@
                         <thead>
                           <tr class="bg-light text-dark">
                             <th class="text-center">No.</th>
-                            <th class="text-center">Name</th>
-                            <th class="text-center">Category</th>
+                            <th class="text-center">Action</th>
+                            <th class="text-center"> Design Name</th>
+                            <th class="text-center">Image</th>
                             <th class="text-center">Size</th>    
                             <th class="text-center">Finish</th>    
-                            <th class="text-center">Area</th>    
-                            <th class="text-center">Action</th>
+                            <th class="text-center">Category</th>    
+                           
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
                             <td class="text-center table-data">1</td>
-                            <td class="text-center table-data">VT 6001</td>
-                            <td class="text-center table-data">GVT</td>
-                            <td class="text-center table-data">16 * 18</td>
-                            <td class="text-center table-data">Matt</td>
-                            <td class="text-center table-data">Living room</td>
                             <td class="d-flex justify-content-center"> 
                               <ul class="action"> 
                                 <li class="edit"> <a href="#" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
                                 <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
                               </ul>
                             </td>
+                            <td class="text-center table-data">abc</td>
+                            <td class="text-center table-data"><img src="./assets/images/demo img.avif" width="70px" height="70px" alt=""></td>
+                            <td class="text-center table-data">16 * 18</td>
+                            <td class="text-center table-data">963258</td>
+                            <td class="text-center table-data">Ceramic</td>
+                           
                           </tr>
-                         
+                          <tr>
+                            <td class="text-center table-data">2</td>
+                            <td class="d-flex justify-content-center"> 
+                              <ul class="action"> 
+                                <li class="edit"> <a href="#" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
+                                <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
+                              </ul>
+                            </td>
+                            <td class="text-center table-data">abc</td>
+                            <td class="text-center table-data"><img src="./assets/images/demo img.avif" width="70px" height="70px" alt=""></td>
+                            <td class="text-center table-data">16 * 18</td>
+                            <td class="text-center table-data">963258</td>
+                            <td class="text-center table-data">PGVT</td>
+                          
+                          </tr>
                         
                           </tr>
                         </tbody>
@@ -571,7 +617,9 @@
             </div>
           </div>
           <!-- Container-fluid Ends-->
-        </div>
+        </div>  
+    </div>
+
         <!-- footer start-->
         <footer class="footer">
           <div class="container-fluid">
@@ -583,7 +631,6 @@
           </div>
         </footer>
       </div>
-    </div>
     <!-- latest jquery-->
     <script src="../assets/js/jquery.min.js"></script>
     <!-- Bootstrap js-->

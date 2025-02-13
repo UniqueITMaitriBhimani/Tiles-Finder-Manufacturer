@@ -102,54 +102,94 @@
                 </div>
               </li>
               <li class="onhover-dropdown">
-                <svg>
-                  <use href="assets/svg/icon-sprite.svg#star"></use>
-                </svg>
+                <div class="globe-icon"><i class="globe" data-feather="globe"></i></div>
                 <div class="onhover-show-div bookmark-flip">
-                  <div class="flip-card">
+                  <div class="flip-card" >
                     <div class="flip-card-inner">
-                      <div class="front">
-                        <h6 class="f-18 mb-0 dropdown-title">Bookmark</h6>
+                      <div class="front" style="height: auto;">
+                        <h6 class="f-18 mb-0 dropdown-title">Copy Link</h6>
                         <ul class="bookmark-dropdown">
-                          <li>
-                            <div class="row">
-                              <div class="col-4 text-center">
-                                <div class="bookmark-content">
-                                  <div class="bookmark-icon"><i data-feather="file-text"></i></div><span>Forms</span>
-                                </div>
-                              </div>
-                              <div class="col-4 text-center">
-                                <div class="bookmark-content">
-                                  <div class="bookmark-icon"><i data-feather="user"></i></div><span>Profile</span>
-                                </div>
-                              </div>
-                              <div class="col-4 text-center">
-                                <div class="bookmark-content">
-                                  <div class="bookmark-icon"><i data-feather="server"></i></div><span>Tables</span>
-                                </div>
-                              </div>
-                            </div>
+                          <li class="text-center">
+                            <input type="text" id="copyLinkInput" value="https://example.com" readonly>
+                            <button class="flip-btn f-w-700" onclick="copyLink()">Copy</button>
+                            <span id="copyMessage" class="copy-message">Copied!</span>
                           </li>
-                          <li class="text-center"><a class="flip-btn f-w-700" id="flip-btn" href="javascript:void(0)">Add New Bookmark</a></li>
-                        </ul>
-                      </div>
-                      <div class="back">
-                        <ul>
-                          <li>
-                            <div class="bookmark-dropdown flip-back-content">
-                              <input type="text" placeholder="search...">
-                            </div>
-                          </li>
-                          <li><a class="f-w-700 d-block flip-back" id="flip-back" href="javascript:void(0)">Back</a></li>
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
-              <li> 
-                <div class="mode"><i class="moon" data-feather="moon"> </i></div>
-              </li>
+              
+<style>
+ .onhover-show-div {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 100;
+}
+
+.onhover-dropdown:hover .onhover-show-div {
+  display: block;
+}
+
+.flip-card {
+  width: 200px;
+  height: auto;
+}
+
+#copyLinkInput {
+  width: 100%;
+  border: none;
+  background: transparent;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.flip-btn {
+  background: #0487ff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.copy-message {
+  display: none;
+  color: #28a745;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+</style>     
+<script>
+function copyLink() {
+  var copyText = document.getElementById("copyLinkInput");
+  
+  // Copy the text without selecting it
+  navigator.clipboard.writeText(copyText.value)
+    .then(() => {
+      // Show the copied message
+      var message = document.getElementById("copyMessage");
+      message.style.display = "inline";
+      
+      // Hide the message after 2 seconds
+      setTimeout(function() {
+        message.style.display = "none";
+      }, 2000);
+    })
+    .catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+}
+
+
+</script>       
+              
               <li class="onhover-dropdown notification-down">
                 <div class="notification-box"> 
                   <svg> 
@@ -326,6 +366,94 @@
                   </div>
                 </div>
               </li>
+              <li class="onhover-dropdown">
+                <div class="globe-icon"><i class="globe" data-feather="globe"></i></div>
+                <div class="onhover-show-div bookmark-flip">
+                  <div class="flip-card" >
+                    <div class="flip-card-inner">
+                      <div class="front" style="height: auto;">
+                        <h6 class="f-18 mb-0 dropdown-title">Copy Link</h6>
+                        <ul class="bookmark-dropdown">
+                          <li class="text-center">
+                            <input type="text" id="copyLinkInput" value="https://example.com" readonly>
+                            <button class="flip-btn f-w-700" onclick="copyLink()">Copy</button>
+                            <span id="copyMessage" class="copy-message">Copied!</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+<style>
+ .onhover-show-div {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 100;
+}
+
+.onhover-dropdown:hover .onhover-show-div {
+  display: block;
+}
+
+.flip-card {
+  width: 200px;
+  height: auto;
+}
+
+#copyLinkInput {
+  width: 100%;
+  border: none;
+  background: transparent;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.flip-btn {
+  background: #0487ff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.copy-message {
+  display: none;
+  color: #28a745;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+</style>     
+<script>
+function copyLink() {
+  var copyText = document.getElementById("copyLinkInput");
+  
+  // Copy the text without selecting it
+  navigator.clipboard.writeText(copyText.value)
+    .then(() => {
+      // Show the copied message
+      var message = document.getElementById("copyMessage");
+      message.style.display = "inline";
+      
+      // Hide the message after 2 seconds
+      setTimeout(function() {
+        message.style.display = "none";
+      }, 2000);
+    })
+    .catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+}
+
+
+</script>         
               <li class="profile-nav onhover-dropdown"> 
                 <div class="media profile-media"><img class="b-r-10" src="assets/images/dashboard/profile.png" alt="">
                   <div class="media-body d-xxl-block d-none box-col-none">

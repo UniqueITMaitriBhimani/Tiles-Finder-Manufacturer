@@ -660,20 +660,28 @@ function copyLink() {
                                     
                                     <!-- File and Sequence Input Section -->
                                     <div class="row mt-3">
-                                      <div class="col-sm-5"> 
-                                        <label class="form-label" for="formFile1">Design Image</label>
+                                      <div class="col-md-3"> 
+                                        <label class="form-label" for="formFile1">Select Brand</label>
+                                        <select class="form-select" id="manufacturer" required="">
+                                          <option selected="" disabled="" value="">Select Brand</option>
+                                          <option value="Simpolo">Spencera</option>
+                                          <option value="Kajariya">Famous</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-md-3"> 
+                                        <label class="form-label" for="formFile1">Select Design</label>
                                         <select class="form-select" id="manufacturer" required="">
                                           <option selected="" disabled="" value="">Select Design</option>
                                           <option value="Simpolo">Snow White</option>
                                           <option value="Kajariya">Black PLain</option>
                                         </select>
                                       </div>
-                                      <div class="col-sm-5">
+                                      <div class="col-md-3">
                                         <label class="form-label" for="customSequence">Sequence<span class="txt-danger">*</span></label>
                                         <input class="form-control" id="customSequence" type="Sequence" placeholder=" Sequence" required="">
                                         <div class="valid-feedback">Looks good!</div>
                                       </div>
-                                      <div class="col-sm-2">
+                                      <div class="col-md-3">
                                         <div class="d-flex justify-content-end align-items-center mt-4">
                                           <div class="btn-showcase text-start">
                                             <a href="finish-add.html">

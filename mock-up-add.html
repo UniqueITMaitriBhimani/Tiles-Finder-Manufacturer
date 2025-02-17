@@ -602,37 +602,60 @@ function copyLink() {
                             <div class="tab-content dark-field shipping-content" id="cart-options-tabContent">
                               <div class="tab-pane fade show active" id="bill-wizard" role="tabpanel" aria-labelledby="bill-wizard-tab">
                                 <form class="row g-3 needs-validation" novalidate="">
-                                 
+                                
                                   <div class="col-sm-6">
-                                    <label class="form-label" for="customName"> Name<span class="txt-danger">*</span></label>
+                                    <label class="form-label" for="customName">Mockup Name<span class="txt-danger">*</span></label>
                                     <input class="form-control" id="customName" type="text" placeholder="Name" required="">
                                     <div class="valid-feedback">Looks good!</div>
                                   </div>
                                   <div class="col-sm-6">
-                                    <label class="form-label" for="customUrl">URL<span class="txt-danger">*</span></label>
+                                    <label class="form-label" for="customUrl">Mockup URL<span class="txt-danger">*</span></label>
                                     <input class="form-control" id="customUrl" type="URL" placeholder=" URL" required="">
                                     <div class="valid-feedback">Looks good!</div>
                                   </div>
                                   <div class="col-12"> 
-                                    <label class="form-label" for="formFile1">MockUP Image</label>
+                                    <label class="form-label" for="formFile1">Sequence</label>
+                                    <input class="form-control" id="customUrl" type="URL" placeholder="Sequence" required="">
+                                    <div class="invalid-feedback">Invalid form file selected</div>
+                                  </div>
+                                  <div class="col-6"> 
+                                    <label class="form-label" for="formFile1">Choose MockUP Image<span class="txt-danger">*</span></label>
                                     <input class="form-control" id="formFile1" type="file" aria-label="file example" required="">
+                                    <div class="invalid-feedback">Invalid form file selected</div>
+                                  </div>
+                                  <div class="col-6"> 
+                                    <label class="form-label" for="formFile1">Alt Tag</label>
+                                    <input class="form-control" id="customUrl" type="text" placeholder="Alt Tag" required="">
                                     <div class="invalid-feedback">Invalid form file selected</div>
                                   </div>
                                   <div class="col-12">
-                                    <label class="form-label" for="customState-wizard">Is 360° </label>
-                                    <select class="form-select" id="customState-wizard" required="">
-                                      <option selected="" disabled="" value="">Select Size</option>
-                                      <option>YES</option>
-                                      <option>No</option>
-                                    </select>
+                                    <div class="media">
+                                      <label class="col-form-label m-r-10">Is 360° Available<span class="txt-danger">*</span></label>
+                                      <div class="media-body text-end">
+                                        <label class="switch">
+                                          <input type="checkbox" checked=""><span class="switch-state"></span>
+                                        </label>
+                                    </div>
+                                  
                                     <div class="invalid-feedback">Please select a valid state.</div>
                                   </div>
-
-                                  <div class="col-12"> 
-                                    <label class="form-label" for="formFile1">360° Image</label>
+</div>
+                                  <div class="col-6"> 
+                                    <label class="form-label" for="formFile1">Choose 360° Image</label>
                                     <input class="form-control" id="formFile1" type="file" aria-label="file example" required="">
                                     <div class="invalid-feedback">Invalid form file selected</div>
                                   </div>
+                                  <div class="col-6"> 
+                                    <label class="form-label" for="formFile1">Alt Tag</label>
+                                    <input class="form-control" id="customUrl" type="text" placeholder="Alt Tag" required="">
+                                    <div class="invalid-feedback">Invalid form file selected</div>
+                                  </div>
+                                  <style>
+                                    .ck-blurred{
+                                      height : 200px;
+                                    }
+                                  </style>
+                                  <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
                                   <style>
                                     .ck-blurred{
                                       height : 200px;
@@ -656,7 +679,7 @@ function copyLink() {
                                   <div class="card-wrapper border rounded-3 light-card checkbox-checked mt-3">
                                     <!-- Header Section -->
                                    
-                                    <h4 class="">Select Design of Mockup</h4>
+                                    <h4 class="">Select Tiles Design for Mockup</h4>
                                     
                                     <!-- File and Sequence Input Section -->
                                     <div class="row mt-3">
@@ -705,7 +728,8 @@ function copyLink() {
                                                     <thead>
                                                       <tr class="bg-light text-dark">
                                                         <th class="text-center">No.</th>
-                                                        <th class="text-center">Design Name</th>
+                                                        <th class="text-center">Image</th>
+                                                        <th class="text-center">Brand</th>
                                                         <th class="text-center">Sequence</th> 
                                                         <th class="text-center">Action</th>
                                                       </tr>
@@ -713,7 +737,11 @@ function copyLink() {
                                                     <tbody>
                                                       <tr>
                                                         <td class="text-center table-data">1</td>
-                                                        <td class="text-center table-data"> Snow White
+                                                        <td class="text-center table-data">
+                                                          <img src="assets/images/demo img.avif" width="70px" height="70px" alt="">
+                                                        </td>
+                                                        <td class="text-center table-data">
+                                                          Famous
                                                         </td>
                                                         <td class="text-center table-data">6</td>
                                                         <td class="d-flex justify-content-center"> 
@@ -733,7 +761,11 @@ function copyLink() {
                                                       </tr>
                                                       <tr>
                                                         <td class="text-center table-data">2</td>
-                                                        <td class="text-center table-data">Black Plain
+                                                        <td class="text-center table-data">
+                                                          <img src="assets/images/demo 2.jpg" width="70px" height="70px" alt="">
+                                                        </td>
+                                                        <td class="text-center table-data">
+                                                          Famous
                                                         </td>
                                                         <td class="text-center table-data">6</td>
                                                         <td class="d-flex justify-content-center"> 
@@ -767,12 +799,12 @@ function copyLink() {
                                     <h4 class="">Meta Details</h4>
                                     <div class="row mt-3">
                                   <div class="col-6">
-                                    <label class="form-label" for="customMetaTitle"> Meta Title<span class="txt-danger">*</span></label>
+                                    <label class="form-label" for="customMetaTitle"> Meta Title</label>
                                     <input class="form-control" id="customMetaTitle" type="text" placeholder="Meta Title" required="">
                                     <div class="valid-feedback">Looks good!</div>
                                   </div>
                                   <div class="col-6">
-                                    <label class="form-label" for="customMetaUrl"> Meta URL<span class="txt-danger">*</span></label>
+                                    <label class="form-label" for="customMetaUrl"> Meta URL</label>
                                     <input class="form-control" id="customMetaUrl" type="text" placeholder="Meta URL" required="">
                                     <div class="valid-feedback">Looks good!</div>
                                   </div>
@@ -783,12 +815,12 @@ function copyLink() {
                                     <div class="invalid-feedback">Invalid form file selected</div>
                                   </div>
                                   <div class="col-12">
-                                    <label class="form-label" for="customMetaDescription"> Meta Description<span class="txt-danger">*</span></label>
+                                    <label class="form-label" for="customMetaDescription"> Meta Description</label>
                                     <input class="form-control" id="customMetaDescription" type="text" placeholder="Meta Description" required="">
                                     <div class="valid-feedback">Looks good!</div>
                                   </div>
                                   <div class="col-12">
-                                    <label class="form-label" for="customMetaKeyword"> Meta Keyword<span class="txt-danger">*</span></label>
+                                    <label class="form-label" for="customMetaKeyword"> Meta Keyword</label>
                                     <input class="form-control" id="customMetaKeyword" type="text" placeholder="Meta Keyword" required="">
                                     <div class="valid-feedback">Looks good!</div>
                                   </div>

@@ -602,7 +602,7 @@ function copyLink() {
                             <div class="tab-content dark-field shipping-content" id="cart-options-tabContent">
                               <div class="tab-pane fade show active" id="bill-wizard" role="tabpanel" aria-labelledby="bill-wizard-tab">
                                 <form class="row g-3 needs-validation" novalidate="">
-                                  <div class="col-sm-6">
+                                  <div class="col-sm-12">
                                     <label class="form-label" for="customName"> Name<span class="txt-danger">*</span></label>
                                     <input class="form-control" id="customName" type="text" placeholder="Name" required="">
                                     <div class="valid-feedback">Looks good!</div>
@@ -610,6 +610,11 @@ function copyLink() {
                                   <div class="col-sm-6">
                                     <label class="form-label" for="customUrl">URL<span class="txt-danger">*</span></label>
                                     <input class="form-control" id="customUrl" type="URL" placeholder=" URL" required="">
+                                    <div class="valid-feedback">Looks good!</div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <label class="form-label" for="customUrl">Sequence</label>
+                                    <input class="form-control" id="customUrl" type="URL" placeholder=" Sequence" required="">
                                     <div class="valid-feedback">Looks good!</div>
                                   </div>
                                   <div class="col-sm-6">
@@ -891,20 +896,26 @@ function copyLink() {
                                   </div>
                                   </div>
                                 
-                                  <div class="card-wrapper border rounded-3 light-card checkbox-checked mt-3">
-                                    <h4>Select Phase</h4>
+                                <div class="card-wrapper border rounded-3 light-card checkbox-checked mt-3">
+                                    <h4>Select Randoms</h4>
                                     <div class="row mt-3">
                                         <div class="col-sm-4"> 
-                                            <label class="form-label" for="formFile1">Choose File</label>
+                                            <label class="form-label" for="formFile1">Choose Random Image<span
+                                              class="txt-danger">*</span></label>
                                             <input class="form-control" id="formFile1" type="file" aria-label="file example" required="">
                                             <div class="invalid-feedback">Invalid form file selected</div>
                                           </div>
-                                          <div class="col-sm-4">
+                                          <div class="col-sm-3">
                                             <label class="form-label" for="customSequence">Sequence<span class="txt-danger">*</span></label>
                                             <input class="form-control" id="customSequence" type="Sequence" placeholder=" Sequence" required="">
                                             <div class="valid-feedback">Looks good!</div>
                                           </div>
-                                          <div class="col-sm-4">
+                                          <div class="col-sm-3">
+                                            <label class="form-label" for="customSequence">    Alt Tag</label>
+                                            <input class="form-control" id="customSequence" type="Sequence" placeholder=" Alt Tag" required="">
+                                            <div class="valid-feedback">Looks good!</div>
+                                          </div>
+                                          <div class="col-sm-2">
                                             <div class="d-flex justify-content-end align-items-center mt-4">
                                                 <div class="btn-showcase text-start"> <a href="finish-add.html">
                                                     <button class="btn btn-pill btn-outline-danger-2x b-r-8" type="button">Add</button></a></div>
@@ -951,7 +962,7 @@ function copyLink() {
                                                                 </ul>
                                                               </td>
                                                             </tr>
-                                                          
+                                                         
                                                             </tr>
                                                           </tbody>
                                                         </table>
